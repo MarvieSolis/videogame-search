@@ -26,6 +26,13 @@ class GameRow extends React.Component {
         return image;
     }
 
+    viewGame() {
+        const boundObject = this;
+        console.log(boundObject.props.game.title);
+        const gameURL = this.props.game.url;
+        window.location.href = gameURL;
+    }
+
 
 
 
@@ -40,7 +47,10 @@ class GameRow extends React.Component {
                         <div className="col-sm-7">
                             <div className="row">
                                 <div id="gameTitle2" className="col-sm-12">
-                                    <h3 className="gameTitle">{this.props.game.name}</h3>
+                                    <span>
+                                        <h3 className="gameTitle">{this.props.game.name}</h3>
+                                        <input id="viewButton" type="button" value="view" onClick={this.viewGame.bind(this)} />
+                                    </span>
                                 </div>
                             </div>
                             <div className="row">
