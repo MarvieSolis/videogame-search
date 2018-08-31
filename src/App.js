@@ -91,8 +91,8 @@ class App extends Component {
     return (
       <div className="App">
         <div id="navbar" className="container-fluid">
-          <div className="row">
-            <div className="col-sm-12">
+          <div className="row justify-content-center">
+            <div className="col-sm-auto">
               <span>
                 <img id="logo" alt="logo" src={controller} />
                 <img id="banner" alt="banner" src={banner2} />
@@ -112,6 +112,35 @@ class App extends Component {
         </div>
 
         {this.state.rows}
+
+        <div className="container-fluid" id="contactSection2">
+        <a id="contactLink" name="contact"></a>
+        <div className="row">
+            <div className="col-sm-12">
+                <span id="email">
+                    <p id="emailText">
+                        <i className="fas fa-envelope-square"></i> <a id="emailLink" href="mailto:marvie_solis@ymail.com" target="_top">marvie_solis@ymail.com</a></p>
+                    <p id="copyrightText">
+                        <i className="far fa-copyright"> Copyright 2018</i>
+                    </p>
+                </span>
+                <span id="socialLinks">
+                    <a className="social" href="https://www.linkedin.com/in/marvie-c-solis/" target="_blank">
+                        <i id="link" className="fab fa-linkedin"></i>
+                    </a>
+                    <a className="social" href="https://github.com/MarvieSolis" target="_blank">
+                        <i id="link" className="fab fa-github-square"></i>
+                    </a>
+                    <a className="social" href="https://www.instagram.com/marviesolis/" target="_blank">
+                        <i id="link" className="fab fa-instagram"></i>
+                    </a>
+                    <a className="social" href="https://www.facebook.com/m4rv13" target="_blank">
+                        <i id="link" className="fab fa-facebook"></i>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </div>
 
       </div>
     );
