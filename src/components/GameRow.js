@@ -41,13 +41,13 @@ class GameRow extends React.Component {
             <div key={this.props.game.id} className="container-fluid gamerow">
                 {this.props.game ? (
                     <div className="row justify-content-center">
-                        <div className="col-sm-2">
+                        <div className="col-md-2">
                             <img className="vgImage" width="100px" alt={this.props.game.name} src={this.imageCheck()} />
                         </div>
-                        <div className="col-sm-7">
+                        <div className="col-md-7">
                             <div className="row">
                                 <div id="gameTitle2" className="col-sm-12">
-                                    <span>
+                                    <span id="spanTitle">
                                         <h3 className="gameTitle">{this.props.game.name}</h3>
                                         <input id="viewButton" type="button" value="view" onClick={this.viewGame.bind(this)} />
                                     </span>
@@ -61,7 +61,7 @@ class GameRow extends React.Component {
                         </div>
                     </div>
                 ) : (
-                        <h3>No Results</h3>
+                        <h3 id="noResults">No Results</h3>
                     )}
 
                 <hr />

@@ -93,7 +93,7 @@ class App extends Component {
         <div id="navbar" className="container-fluid">
           <div className="row justify-content-center">
             <div className="col-sm-auto">
-              <span>
+              <span id="navSpan">
                 <img id="logo" alt="logo" src={controller} />
                 <img id="banner" alt="banner" src={banner2} />
                 <h1 id="navName">powered by: IGDB</h1>
@@ -114,7 +114,6 @@ class App extends Component {
         {this.state.rows}
 
         <div className="container-fluid" id="contactSection2">
-        <a id="contactLink" name="contact"></a>
         <div className="row">
             <div className="col-sm-12">
                 <span id="email">
@@ -125,16 +124,16 @@ class App extends Component {
                     </p>
                 </span>
                 <span id="socialLinks">
-                    <a className="social" href="https://www.linkedin.com/in/marvie-c-solis/" target="_blank">
+                    <a className="social" href="https://www.linkedin.com/in/marvie-c-solis/">
                         <i id="link" className="fab fa-linkedin"></i>
                     </a>
-                    <a className="social" href="https://github.com/MarvieSolis" target="_blank">
+                    <a className="social" href="https://github.com/MarvieSolis">
                         <i id="link" className="fab fa-github-square"></i>
                     </a>
-                    <a className="social" href="https://www.instagram.com/marviesolis/" target="_blank">
+                    <a className="social" href="https://www.instagram.com/marviesolis/" >
                         <i id="link" className="fab fa-instagram"></i>
                     </a>
-                    <a className="social" href="https://www.facebook.com/m4rv13" target="_blank">
+                    <a className="social" href="https://www.facebook.com/m4rv13">
                         <i id="link" className="fab fa-facebook"></i>
                     </a>
                 </span>
